@@ -1,0 +1,29 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.openqa.selenium.WebDriver;
+
+public class Jdbcconn {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+
+		String host = "localhost";
+		String port = "3306";
+		Connection conn = DriverManager.getConnection("jdbc:mysql://" +host+ ":" +port+ "/classicmodels" , "root", "root");
+		Statement stat = conn.createStatement();
+		ResultSet rs = stat.executeQuery("select * from customers where customernumber = '103'");
+		rs.next();
+		
+		WebDriver driver = new chromeDriver;
+		
+		System.out.println(rs.getString("customerName"));
+		System.out.println(rs.getString("contactLastName"));
+		
+		
+	}
+
+}

@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+
+public class javatutorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int Number = 1;
+		String Name = "Kiran Katkar";
+		double Number1 = 30.5;
+		boolean kk = true;
+		char jk = 'k';
+		System.out.println(jk);
+		
+int[] kk1 = {11,56,78,45,87,45}; 
+System.out.println(kk1[0]);
+
+String[] kk2 = {"kiran", "anant", "katkar"};
+System.out.println(kk2[0]);
+
+//for( int i= 0; i < kk1.length; i++ )
+//{
+	
+//	System.out.println(kk1[i]);
+//}
+
+for(String s : kk2) {
+	System.out.println(s);
+}
+
+for( int i = 0; i < kk2.length; i++)
+{
+System.out.println(kk2[i]);	
+}
+
+for(int i=0; i<kk1.length; i++)
+{
+if(kk1[i] % 2 == 0)
+{
+	System.out.println(kk1[i]);
+	break;
+}
+else
+{
+System.out.println(kk1[i] +"is not multiple of 2");	
+}
+}
+
+ArrayList <String> a = new ArrayList <String>();
+a.add("Kiran");
+a.add("ANANT");
+System.out.println(a.get(1));
+		
+	}
+
+}

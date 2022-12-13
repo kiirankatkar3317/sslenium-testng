@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Loan</th></tr>
+<tr><td><a href="#t0">Loantest</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">150</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Loan</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Loantest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.day1</td><td><a href="#m0">Mobiletestloan</a></td><td rowspan="1">1663444871747</td><td rowspan="1">5</td></tr><tr class="failedodd"><td rowspan="1">test.day4</td><td><a href="#m1">Webcarloan</a></td><td rowspan="1">1663444871832</td><td rowspan="1">0</td></tr><tr><th colspan="4">Loantest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">test.day1</td><td><a href="#m2">Apitestloan</a></td><td rowspan="1">1663444871732</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m3">Mobiletestloan1</a></td><td rowspan="1">1663444871757</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m4">Mobiletestloan2</a></td><td rowspan="1">1663444871769</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="5">test.day2</td><td><a href="#m5">Apihomeloan</a></td><td rowspan="1">1663444871778</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m6">Mobilehomeloan</a></td><td rowspan="1">1663444871781</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m7">Webhomeloan</a></td><td rowspan="3">1663444871796</td><td rowspan="3">2</td></tr><tr class="passedodd"><td><a href="#m8">Webhomeloan</a></td></tr><tr class="passedodd"><td><a href="#m9">Webhomeloan</a></td></tr><tr class="passedeven"><td rowspan="3">test.day3</td><td><a href="#m10">Apilogin</a></td><td rowspan="1">1663444871812</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m11">Mobilelogin</a></td><td rowspan="1">1663444871818</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m12">Weblogin</a></td><td rowspan="1">1663444871822</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="2">test.day4</td><td><a href="#m13">Apicarloan</a></td><td rowspan="1">1663444871825</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m14">Mobilecarloan</a></td><td rowspan="1">1663444871828</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Loantest</h2><h3 id="m0">test.day1#Mobiletestloan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at test.day1.Mobiletestloan(day1.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.day4#Webcarloan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method Webcarloan but has not been marked @Optional or defined
+in C:\Users\LENOVO\eclipse-workspace\TestNGTut\testng2.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.day1#Apitestloan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.day1#Mobiletestloan1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.day1#Mobiletestloan2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.day2#Apihomeloan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.day2#Mobilehomeloan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.day2#Webhomeloan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>username1</td><td>password1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test.day2#Webhomeloan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>username2</td><td>password2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test.day2#Webhomeloan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>username</td><td>password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">test.day3#Apilogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">test.day3#Mobilelogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">test.day3#Weblogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">test.day4#Apicarloan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">test.day4#Mobilecarloan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

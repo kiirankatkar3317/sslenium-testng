@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 3, Time elapsed: 1.818 s <<< FAILURE! - in TestSuite
+loginPage(Frameworkproj.Tests.ErrorMessegeValidationTest)  Time elapsed: 1.18 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+
+loginPage(Frameworkproj.Tests.Wbtstwithframe3Test)  Time elapsed: 1.18 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+
+exitTest(Frameworkproj.Tests.Wbtstwithframe3Test)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+
+exitTest(Frameworkproj.Tests.ErrorMessegeValidationTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+

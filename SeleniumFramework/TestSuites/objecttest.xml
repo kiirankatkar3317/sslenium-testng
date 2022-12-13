@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<groups>
+<run>
+<include name="ObjectTest"/>
+</run>
+</groups>
+  <test thread-count="5" name="SubmitOrderTest">
+    <classes>
+      <class name="Frameworkproj.Tests.Wbtstwithframe3Test"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="ErorMessegeTest">
+    <classes>
+      <class name="Frameworkproj.Tests.ErrorMessegeValidationTest"/>
+    </classes>
+    </test> <!-- Test -->
+    <test thread-count="5" name="Objectdatatest">
+    <classes>
+      <class name="Frameworkproj.Tests.Objdata"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

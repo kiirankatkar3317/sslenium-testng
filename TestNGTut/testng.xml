@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan">
+
+	<test name="Loantest">
+
+	
+		<classes>
+			<class name="test.day1">
+				<methods>
+					<exclude name="Mobile.*" />
+				</methods>
+			</class>
+			<class name="test.day3">
+				<methods>
+					<exclude name="Apilogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Homeloan">
+		<classes>
+			<class name="test.day2">
+				<methods>
+					<exclude name="Apihomeloan" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Carloan">
+	<parameter name="URL" value="www.google.com"/>
+	<parameter name="APIKEY" value="KK3317"/>
+		<classes>
+			<class name="test.day4" />
+		</classes>
+	</test>
+</suite> 

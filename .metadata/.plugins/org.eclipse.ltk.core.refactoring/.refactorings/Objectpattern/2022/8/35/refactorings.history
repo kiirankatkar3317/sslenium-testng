@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Objectpatt.Patternobj.java&apos; to &apos;RediffHomePage.java&apos;&#x0D;&#x0A;- Original project: &apos;Objectpattern&apos;&#x0D;&#x0A;- Original element: &apos;Objectpatt.Patternobj.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Objectpatt.RediffHomePage.java&apos;" description="Rename compilation unit &apos;Patternobj.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Objectpatt{Patternobj.java" name="RediffHomePage.java" references="false" stamp="1661279037303" version="1.0"/>
+</session>

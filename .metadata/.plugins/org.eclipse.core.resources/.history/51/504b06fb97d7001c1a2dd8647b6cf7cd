@@ -1,0 +1,13 @@
+
+public class javatutorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int Number = 1;
+		String Name = "Kiran Katkar";
+		System.out.println(Name);
+
+	}
+
+}

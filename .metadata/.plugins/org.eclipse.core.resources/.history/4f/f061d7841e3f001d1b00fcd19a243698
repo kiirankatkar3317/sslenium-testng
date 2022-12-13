@@ -1,0 +1,51 @@
+package Frameworkproj.PageObject;
+import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import Frameworkproj.AbstractionForReuse.AbstractionModel;
+public class ProductCatalouge extends AbstractionModel{
+	
+	   public WebDriver driver;
+	
+	public ProductCatalouge(WebDriver driver) {
+		super(driver);
+		
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(css = "div[class*='mb-3']")
+	List<WebElement> productcard;
+	
+	
+	
+	By addtocartclick = By.cssSelector(".btn.w-10.rounded");
+	
+	public List<WebElement> getProductList() {
+		return productcard;
+		
+	}
+	
+	public WebElement FindProduct(String cartprodname) {
+		ElementToVisible(landingpagewait);
+		WebElement prodname = productcard.stream().filter(productname->productname.findElement(By.xpath("//div//h5//b")).getText().equals(cartprodname)).findFirst().orElse(null);
+        return prodname;
+
+        
+	}
+	
+	public CartPage FindProductandclick(String cartprodname) {
+		
+		FindProduct(cartprodname).findElement(addtocartclick).click();
+return cartpage;
+		
+	}
+	
+
+	
+	
+}
+

@@ -1,0 +1,15 @@
+
+public class javatutorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int Number = 1;
+		String Name = "Kiran Katkar";
+		double Number1 = 30.5;
+		System.out.println(Number1);
+		
+
+	}
+
+}

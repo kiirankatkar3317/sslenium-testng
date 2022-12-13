@@ -1,0 +1,12 @@
+
+public class javatutorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int Number = 1;
+		System.out.println(Number);
+
+	}
+
+}

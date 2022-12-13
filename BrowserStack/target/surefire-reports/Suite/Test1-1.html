@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>TestNG:  Test1-1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1-1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 07 15:51:05 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (197 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='stack.CheckTitle2.titleCheck()'><b>titleCheck</b><br>Test class: stack.CheckTitle2</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;/&gt;&lt;meta charSet=&quot;utf-8&quot;/&gt;&lt;title&gt;404: This page could not be found&lt;/title&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;noscript data-n-css=&quot;true&quot;&gt;&lt;/noscript&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; as=&quot;script&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;__next&quot;&gt;&lt;div style=&quot;color:#000;background:#fff;font-family:-apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Fira Sans&amp;quot;, Avenir, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center&quot;&gt;&lt;div&gt;&lt;style&gt;body { margin: 0 }&lt;/style&gt;&lt;h1 style=&quot;display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top&quot;&gt;404&lt;/h1&gt;&lt;div style=&quot;display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle&quot;&gt;&lt;h2 style=&quot;font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0&quot;&gt;This page could not be found&lt;!-- --&gt;.&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;__NEXT_DATA__&quot; type=&quot;application/json&quot;&gt;{&quot;props&quot;:{&quot;pageProps&quot;:{&quot;statusCode&quot;:404}},&quot;page&quot;:&quot;/_error&quot;,&quot;query&quot;:{},&quot;buildId&quot;:&quot;A4W2e_gd6IfbDVjxfbNGN&quot;,&quot;nextExport&quot;:true,&quot;isFallback&quot;:false,&quot;gip&quot;:true,&quot;head&quot;:[[&quot;meta&quot;,{&quot;name&quot;:&quot;viewport&quot;,&quot;content&quot;:&quot;width=device-width&quot;}],[&quot;meta&quot;,{&quot;charSet&quot;:&quot;utf-8&quot;}],[&quot;title&quot;,{&quot;children&quot;:&quot;404: This page could not be found&quot;}]]}&lt;/script&gt;&lt;script nomodule=&quot;&quot; src=&quot;/_next/static/chunks/polyfills-1509bd3fd78666178104.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_buildManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_ssgManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 
+Host info: host: &apos;LAPTOP-E8M4K11U&apos;, ip: &apos;192.168.0.105&apos;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:132)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at stack.CheckTitle2.titleCheck(CheckTitle2.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;/&gt;&lt;meta charSet=&quot;utf-8&quot;/&gt;&lt;title&gt;404: This page could not be found&lt;/title&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;noscript data-n-css=&quot;true&quot;&gt;&lt;/noscript&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; as=&quot;script&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;__next&quot;&gt;&lt;div style=&quot;color:#000;background:#fff;font-family:-apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Fira Sans&amp;quot;, Avenir, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center&quot;&gt;&lt;div&gt;&lt;style&gt;body { margin: 0 }&lt;/style&gt;&lt;h1 style=&quot;display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top&quot;&gt;404&lt;/h1&gt;&lt;div style=&quot;display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle&quot;&gt;&lt;h2 style=&quot;font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0&quot;&gt;This page could not be found&lt;!-- --&gt;.&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;__NEXT_DATA__&quot; type=&quot;application/json&quot;&gt;{&quot;props&quot;:{&quot;pageProps&quot;:{&quot;statusCode&quot;:404}},&quot;page&quot;:&quot;/_error&quot;,&quot;query&quot;:{},&quot;buildId&quot;:&quot;A4W2e_gd6IfbDVjxfbNGN&quot;,&quot;nextExport&quot;:true,&quot;isFallback&quot;:false,&quot;gip&quot;:true,&quot;head&quot;:[[&quot;meta&quot;,{&quot;name&quot;:&quot;viewport&quot;,&quot;content&quot;:&quot;width=device-width&quot;}],[&quot;meta&quot;,{&quot;charSet&quot;:&quot;utf-8&quot;}],[&quot;title&quot;,{&quot;children&quot;:&quot;404: This page could not be found&quot;}]]}&lt;/script&gt;&lt;script nomodule=&quot;&quot; src=&quot;/_next/static/chunks/polyfills-1509bd3fd78666178104.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_buildManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_ssgManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+	at org.openqa.selenium.json.Json.toType(Json.java:57)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:129)
+	... 31 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+	at org.openqa.selenium.json.Json.toType(Json.java:71)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	... 33 more
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1059341860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059341860'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;/&gt;&lt;meta charSet=&quot;utf-8&quot;/&gt;&lt;title&gt;404: This page could not be found&lt;/title&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;noscript data-n-css=&quot;true&quot;&gt;&lt;/noscript&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; as=&quot;script&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;__next&quot;&gt;&lt;div style=&quot;color:#000;background:#fff;font-family:-apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Fira Sans&amp;quot;, Avenir, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center&quot;&gt;&lt;div&gt;&lt;style&gt;body { margin: 0 }&lt;/style&gt;&lt;h1 style=&quot;display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top&quot;&gt;404&lt;/h1&gt;&lt;div style=&quot;display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle&quot;&gt;&lt;h2 style=&quot;font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0&quot;&gt;This page could not be found&lt;!-- --&gt;.&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;__NEXT_DATA__&quot; type=&quot;application/json&quot;&gt;{&quot;props&quot;:{&quot;pageProps&quot;:{&quot;statusCode&quot;:404}},&quot;page&quot;:&quot;/_error&quot;,&quot;query&quot;:{},&quot;buildId&quot;:&quot;A4W2e_gd6IfbDVjxfbNGN&quot;,&quot;nextExport&quot;:true,&quot;isFallback&quot;:false,&quot;gip&quot;:true,&quot;head&quot;:[[&quot;meta&quot;,{&quot;name&quot;:&quot;viewport&quot;,&quot;content&quot;:&quot;width=device-width&quot;}],[&quot;meta&quot;,{&quot;charSet&quot;:&quot;utf-8&quot;}],[&quot;title&quot;,{&quot;children&quot;:&quot;404: This page could not be found&quot;}]]}&lt;/script&gt;&lt;script nomodule=&quot;&quot; src=&quot;/_next/static/chunks/polyfills-1509bd3fd78666178104.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_buildManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_ssgManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt; 
+Host info: host: &apos;LAPTOP-E8M4K11U&apos;, ip: &apos;192.168.0.105&apos;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:132)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at stack.CheckTitle2.titleCheck(CheckTitle2.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;/&gt;&lt;meta charSet=&quot;utf-8&quot;/&gt;&lt;title&gt;404: This page could not be found&lt;/title&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/412b7dee.11f4ec51.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; as=&quot;style&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/_next/static/chunks/styles.e2bb0603.chunk.css&quot; data-n-g=&quot;&quot;/&gt;&lt;noscript data-n-css=&quot;true&quot;&gt;&lt;/noscript&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; as=&quot;script&quot;/&gt;&lt;link rel=&quot;preload&quot; href=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; as=&quot;script&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;__next&quot;&gt;&lt;div style=&quot;color:#000;background:#fff;font-family:-apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Fira Sans&amp;quot;, Avenir, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Lucida Grande&amp;quot;, sans-serif;height:100vh;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center&quot;&gt;&lt;div&gt;&lt;style&gt;body { margin: 0 }&lt;/style&gt;&lt;h1 style=&quot;display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top&quot;&gt;404&lt;/h1&gt;&lt;div style=&quot;display:inline-block;text-align:left;line-height:49px;height:49px;vertical-align:middle&quot;&gt;&lt;h2 style=&quot;font-size:14px;font-weight:normal;line-height:inherit;margin:0;padding:0&quot;&gt;This page could not be found&lt;!-- --&gt;.&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;__NEXT_DATA__&quot; type=&quot;application/json&quot;&gt;{&quot;props&quot;:{&quot;pageProps&quot;:{&quot;statusCode&quot;:404}},&quot;page&quot;:&quot;/_error&quot;,&quot;query&quot;:{},&quot;buildId&quot;:&quot;A4W2e_gd6IfbDVjxfbNGN&quot;,&quot;nextExport&quot;:true,&quot;isFallback&quot;:false,&quot;gip&quot;:true,&quot;head&quot;:[[&quot;meta&quot;,{&quot;name&quot;:&quot;viewport&quot;,&quot;content&quot;:&quot;width=device-width&quot;}],[&quot;meta&quot;,{&quot;charSet&quot;:&quot;utf-8&quot;}],[&quot;title&quot;,{&quot;children&quot;:&quot;404: This page could not be found&quot;}]]}&lt;/script&gt;&lt;script nomodule=&quot;&quot; src=&quot;/_next/static/chunks/polyfills-1509bd3fd78666178104.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/main-127f4130b2ee8251cb07.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/webpack-248a2eecd85f348c85bf.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/framework.9707fddd9ae5927c17c3.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/commons.8dd95e2c8a426fce4243.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/styles.b589c95bae47a4b56802.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/chunks/pages/_error-fcf263e27259671dfb6d.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_buildManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/_next/static/A4W2e_gd6IfbDVjxfbNGN/_ssgManifest.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+	at org.openqa.selenium.json.Json.toType(Json.java:57)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:129)
+	... 31 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+	at org.openqa.selenium.json.Json.toType(Json.java:71)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	... 33 more
+</pre></div></td>
+<td>0</td>
+<td>stack.CheckTitle2@2fab4aff</td></tr>
+</table><p>
+</body>
+</html>
